@@ -1,0 +1,7 @@
+.paypal-bttn__container {
+  display: block;
+}
+
+.paypal-bttn__container[data-invisible] {
+  display: none;
+}

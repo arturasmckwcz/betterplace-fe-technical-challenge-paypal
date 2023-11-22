@@ -1,4 +1,5 @@
 import PayPalButton, { PayPalFormValues } from './PayPalButton'
+import PayPalButtonFC from './PayPalButtonFC'
 import { Formik, FormikConfig } from 'formik'
 import './App.css'
 const submitHandler: FormikConfig<PayPalFormValues>['onSubmit'] = (_, formik) => {
@@ -14,6 +15,9 @@ function App() {
       <Formik<PayPalFormValues> onSubmit={submitHandler} initialValues={{}}>
         <PayPalButton />
       </Formik>
+      <br />
+      <p>Functional component</p>
+      <PayPalButtonFC onSubmit={submitHandler} initialValues={{}} env="sandbox" />
     </>
   )
 }

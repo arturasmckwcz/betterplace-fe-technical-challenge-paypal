@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 import tsconfigPaths from 'vite-tsconfig-paths'
-import { defineConfig } from 'vite'
+import { UserConfigExport, defineConfig } from 'vite'
 
 import react from '@vitejs/plugin-react'
 
@@ -21,4 +21,4 @@ export default defineConfig({
       },
     },
   },
-})
+} as UserConfigExport)
